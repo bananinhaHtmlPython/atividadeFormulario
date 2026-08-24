@@ -1,0 +1,90 @@
+<!DOCTYPE html> <!--Digitar ctrl + espaço e depois digitar "HTML sample",
+o programa irá fazer o esqueleto do html "automaticamente".
+Certas coisas terá que preencher-->
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'> <!-- Compatível com qualquer tela.
+    IE=edge: irá traduzir as coisas do internet explorer para o edge -->
+    <title>Aula formulário</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'> <!-- resposível= pode ser
+    usado em telas que qualquer tamanho 
+    (se expremer a tela, ela irá se adaptar) e em qualquer dispositivo-->
+</head>
+<body>
+    <h1>Cadastro de Aluno</h1>
+    <form> <!-- Form= formulário= Campo onde respondemos coisas. Ex: login-->
+        <label for="nome">Nome</label> <!-- título do formulário-->
+        <input
+        type="text"
+        id="nome"
+        name="nome"
+        required
+        > <!-- type= demonstrará o tipo do formulário. 
+        Required: Obriga a preencher. 
+        Id= nome mencionado no for-->
+        <br><br> <!-- br= quebra de linha-->
+        <label for="e-mail">e-mail</label>
+        <input type="email" 
+        id="e-mail" 
+        name="e-mail" 
+        required
+        > <!--for e-mail = for [input]-->
+        <br><br>
+        <label for="nascimento">Data de nascimento</label>
+        <input
+        type="date"
+        id="nascimento"
+        name="nascimento"
+        required
+        > <!-- date = data. time = horário-->
+        <br><br>
+        <label for="curso">Curso</label>
+        <select id="curso" name="curso">
+            <option value=""> <!-- Sempre deixamos no início o valor 
+                vazio para que as pessoas saibam que é para selecionar
+                algo e que a opção selecionar seja vazia-->
+                Selecionar
+            </option>
+            <option value="al">
+                Técnico em Alimentos
+            </option>
+            <option value="ds">
+                Desenvolvimento de Sistemas
+            </option>
+            <option value="inst">
+                Instrumentação
+            </option>
+        </select>
+        <br><br>
+
+        <p>turma</p>
+        <input type="radio" id="manha" name="manha"> <!-- radio= Fará uma parte 
+        para selecionar uma bolinha--> 
+        <label for="manha">Manhã</label>
+
+        <input type="radio" id="tarde" name="tarde"> 
+        <label for="tarde">Tarde</label>
+        
+        <input type="radio" id="noite" name="noite"> 
+        <label for="noite">Noite</label>
+        <br><br>
+        <label for="observacoes">Observações</label>
+        <br>
+        <!--rows = linhas. cols= Tamanho. Textarea= barra de texto-->
+        <textarea 
+        id="observacoes"
+        name="observacoes"
+        rows="5"
+        cols="40" 
+        > 
+        </textarea>
+        <br><br>
+        <input type="checkbox" id="termos" name="termos" required>
+        <label for = "termos">Aceito os termos</label>
+        <br><br>
+        <button type="submit">Cadastrar</button> <!--submit = submeter = enviar algo-->
+        <button type="reset">Limpar</button>
+    </form>
+</body>
+</html>
