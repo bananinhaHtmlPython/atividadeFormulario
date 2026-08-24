@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset='utf-8'>
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
@@ -10,17 +11,179 @@
     <script src='main.js'></script> 
     -->
 </head>
+
 <body>
     <table border="1">
         <caption>Cadastro de funcionários</caption>
         <thead>
+            <!--                         1!                                 -->
             <tr>
                 <th>
                     <label for="nome">Nome completo</label>
-                    <input type="text" id="nome" name="nome">
+                </th>
+                <td>
+                    <input type="text" id="nome" name="nome" required>
+                </td>
+            </tr>
+            <!--                          2!                                -->
+            <tr>
+                <th>
+                    <label for="cpf">CPF</label>
+                </th>
+                <td>
+                    <input type="text" id="cpf" name="cpf" required>
+                </td>
+            </tr>
+
+            <tr>
+                <th>
+                    <label for="email">E-mail</label>
+                </th>
+                <td>
+                    <input type="email" id="email" name="email" required>
+                </td>
+
+            <tr>
+                <th>
+                    <label for="telefone">Telefone</label>
+                </th>
+                <td>
+                    <input type="tel" id="telefone" name="telefone" required>
+                </td>
+            </tr>
+
+            <tr>
+                <th>
+                    <label for="nascimento">Data de nascimento</label>
+                </th>
+                <td>
+                    <input type="date" id="nascimento" name="nascimento" required>
+                </td>
+            </tr>
+
+            <tr>
+                <th>
+                    <label for="cargo">Cargo</label>
+                </th>
+                <td>
+                    <input type="text" id="cargo" name="cargo" required>
+                </td>
+            </tr>
+
+            <tr>
+                <th>
+                    <label for="salario">Salário</label>
+                </th>
+                <td>
+                    <input type="number" id="salario" name="salario" required>
+                </td>
+            </tr>
+            <!-- _______________________________________________________________________________-->
+            <tr>
+                <th>
+                    <label for="setor">Setor</label>
+                </th>
+                <td>
+                    <select id="setor" name="setor" required>
+                        <option value="">
+                            Selecione uma opção ▾
+                        </option>
+                        <option value="01">
+                            Técnico da informação
+                        </option>
+                        <option value="02">
+                            Engenheiro da computação
+                        </option>
+                        <option value="03">
+                            Desenvolvedor web
+                        </option>
+                        <option value="04">
+                            Cibersegurança
+                        </option>
+                    </select>
+                </td>
+            </tr>
+<!--____________________________________________________________________-->
+            <tr>
+                <th>
+                    <label for="turno">Turno</label>
+                </th>
+                <td>
+                    <input type="radio" id="turno" name="turno" required>
+                    <label for="manha">Manhã</label>
+
+                    <input type="radio" id="turno" name="turno" required>
+                    <label for="tarde">Tarde</label>
+
+                    <input type="radio" id="turno" name="turno" required>
+                    <label for="noite">Noite</label>
+                </td>
+            </tr>
+<!--_____________________________________________________________________-->
+            <tr>
+                <th>
+                    <label for="contrato">Tipo de contrato</label>
+                </th>
+                <td>
+                    <select id="contrato" name="contrato" required>
+                        <option value="">
+                            Selecione uma opção ▾
+                        </option>
+                        <option value="clt">
+                            Carteira de trabalho(CLT)
+                        </option>
+
+                        <option value="pj">
+                            Pessoa Jurídica (PJ)
+                        </option>
+
+                        <option value="estagio">
+                            Estágio
+                        </option>
+
+                        <option value="aprendiz">
+                            Jovem aprendiz
+                        </option>
+                    </select>
+                </td>
+            </tr>
+<!--_____________________________________________________________________-->
+            <tr>
+                <th>
+                    <label for="conhecimento">Conhecimento / tecnologias</label>
                 </th>
             </tr>
+            <td>
+                <input type="checkbox" id="ti" name="" required>
+                <label for=""></label>
+                <input type="checkbox" id="ec" name="" required>
+                <label for=""></label>
+                <input type="checkbox" id="dw" name="" required>
+                <label for=""></label>
+                <input type="checkbox" id="cs" name="" required>
+                <label for=""></label>
+            </td>
+<!--_____________________________________________________________________-->
+            <tr>
+                <th>
+                    <label for=""></label>
+                </th>
+            </tr>
+            <td>
+                <input type="" id="" name="" required>
+            </td>
+
+            <tr>
+                <th>
+                    <label for=""></label>
+                </th>
+            </tr>
+            <td>
+                <input type="" id="" name="" required>
+            </td>
+
         </thead>
     </table>
 </body>
+
 </html>
